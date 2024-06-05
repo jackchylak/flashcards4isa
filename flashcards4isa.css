@@ -1,0 +1,285 @@
+body {
+  /* main body used in all html pages */
+  font-family: sans-serif;
+  max-width: 70rem;
+  padding: 1em;
+  margin: auto;
+  background: #20173b;  /* background color, deep purple */
+  color: #f8f9eb;
+}
+
+body>div {
+  /* Div to add some default spacing for each page */
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+div.logo-header {
+  /* Holds logo image at top middle of every page */
+  text-align: center;
+  overflow: auto;
+  background: none;
+}
+
+
+div.add-new-buttons {
+  /* Buttons on home screen to add new flashcards or add new decks */
+  margin-bottom: 1em;
+  padding-left: 6em;
+}
+
+form.input_cards label{
+  /* labels for input boxes of new card info on add_card page */
+  font-weight: bold;
+  padding-left: 9em;
+  margin-right: 12em;
+  font-size: 100%;
+  }
+  
+form.input_cards input {
+  /* text boxes to input front and back of cards */
+  width: 350px;
+  height:100px;
+  padding: 2px 10px;
+  text-align: left;
+  font-size: 130%;
+  border-radius: 3px;
+  margin-left: 6em;
+  
+  }
+  
+form.input_cards h1 input {
+  /* text boxes to input owner and deck on add_card page */
+  margin-right: 1em;
+  margin-left: 18em;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 50%;
+  }
+  
+form.input_cards h1 label {
+  /* labels for input boxes for owner and deck on add_card page */
+  font-weight: bold;
+  padding-left: 17em;
+  margin-right: 4em;
+  font-size: 55%;
+  }
+  
+form.input_cards h2 input {
+  /* add card (submit) button on add_card page */
+  margin-left: 20.75em;
+  margin-top: 3em;
+  background: #e8cdfe;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 100%;
+  }
+  
+  
+form.input_decks label{
+  /* label for deck input box on add_deck page */
+  font-weight: bold;
+  padding-left: 9em;
+  margin-left: 11em;
+  font-size: 120%;
+  }
+  
+  
+form.input_decks input {
+  /* text box to input deck name on add_deck page */
+  width: 350px;
+  height:200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2em;
+  padding: 2px 10px;
+  text-align: center;
+  font-size: 250%;   
+  font-weight: bold;
+  box-shadow: 15px 15px #594ce3;
+  }
+  
+form.input_decks h1 label{
+  /* label to input owner on add_deck page */
+  font-weight: bold;
+  padding-left: 9em;
+  margin-left: 16em;
+  font-size: 60%;
+  }
+  
+  
+form.input_decks h1 input {
+  /* input owner of new deck on add_deck page */
+  width: 150px;
+  height:30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2px 10px;
+  text-align: left;
+  font-size: 50%;   
+  font-weight: bold;
+  box-shadow: 0px 0px #594ce3;
+  }
+  
+form.input_decks h2 input {
+  /* add deck (submit) button on add_deck page */
+  margin-left: 20em;
+  margin-top: 4em;
+  background: #e8cdfe;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 100%;
+  box-shadow: 0px 0px #594ce3;
+
+  }
+  
+div.open-decks h2 {
+  /* username display whose decks are visible on home page */
+  font-style: courier;
+  font-weight: bold;
+  margin-top: 5em;
+  padding-top: 5em;
+  padding-bottom: 0.1em;
+}
+  
+
+div.open-decks {
+  /* hold user deck info on home page */
+  font-style: courier;
+  margin-top: 1em;
+  padding-top: 5em;
+  margin-bottom: 10em;
+  padding-left: 5em;
+}
+
+div.card-label {
+  /* label for front and back of first card on study page */
+  font-style: courier;
+  font-weight: bold;
+  font-size: 90%;
+  float: left;
+  margin-top: 5em;
+  margin-bottom: 0;
+  padding-top: 0em;
+  margin-right: 32.6em;
+  margin-left: 1.6em;
+  padding-bottom: 0.1em;
+}
+
+div.deck-title {
+  /* display which deck the user is viewing on study page */
+  font-style: courier;
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding-top: 0em;
+  margin-left: 0em;
+  padding-left: 0em;
+  padding-bottom: 0em;
+}
+
+div.study-cards {
+  /* display front and back of cards on study page */
+  font-family: courier;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0em;
+  height: 200px;
+  width: 500px;
+  float: left;
+  text-align: center;
+  padding-top: 4em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-top: 0em;
+  margin-bottom: 5em;
+  background: #f8f9eb;
+  color: #404040;
+  border-radius: 0px;
+  box-shadow: 15px 15px #594ce3;
+  
+}
+
+li.btn-create {
+  /* li button to add cards or decks from home page */
+  font-family: courier;
+  border: 0.1em dashed;
+  border-color: #faf4ff;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 1em;
+  height: 150px;
+  width: 300px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  padding-top: 1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 0em;
+  margin-right: 1.5em;
+  background: #f8f9eb;
+  color: #404040;
+  border-radius: 20px;
+}
+
+li.btn-decks {
+  /* li button to allow user to click which deck they want to study from home page */
+  font-family: courier;
+  border: 0.1em dashed;
+  border-color: #faf4ff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1em;
+  height: 100px;
+  width: 225px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  padding-top: 1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 0em;
+  margin-right: 1.2em;
+  background: #f8f9eb;
+  color: #404040;
+  border-radius: 0px;
+  box-shadow: 10px 10px #594ce3;
+}
+
+li.create-button {
+  /* part of li button to add cards or decks from home page */
+  background: #331050;
+  color: #faf4ff;
+}
+
+form.loginform {
+  /* display username input */
+  text-align: center;
+  font-size: 140%;
+}
+
+form.loginform input.submit {
+  /* display username input button */
+  font-size: 100%;
+}
+
+p.error {
+  /* print error message if user tries login with no username */
+  text-align: center;
+  color: #f792af;
+}
+

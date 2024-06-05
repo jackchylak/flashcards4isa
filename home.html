@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/flashcards4isa.css">
+    </head>
+    <body>
+        <div class="logo-header">
+            <img src="/static/flashcards4isa.png" alt="Flashcards 4 Isa" width="220" height="100">
+        </div>
+
+        
+        <div class="add-new-buttons">
+
+            <li onclick="location.href = '/card/new/'" class="btn-create create-button">Add a new flashcard</li>
+            <li onclick="location.href = '/deck/new/'" class="btn-create create-button">Add a new deck</li>
+
+        </div>
+        <div class="open-decks">
+
+            <h2 style="font-family:courier">{{ username }}'s decks:</h2>
+            {% for deck in user_decks %}
+                <ul class="deck-actions"><li onclick="location.href = '/study/{{ deck }}/'" maxlength=7 class="btn-decks decks-button">{{ deck }}</li></ul>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>

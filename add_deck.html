@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add deck</title>
+        <link rel="stylesheet" href="/static/flashcards4isa.css">
+    </head>
+    <body>
+        <div class="logo-header">
+            <img onclick="location.href = '/home/{{ username_home }}/'" src="/static/flashcards4isa.png" alt="Flashcards 4 Isa" width="220" height="100">
+        </div>
+
+    <div>
+    <form class="input_decks" action="/deck/new/submit" method="POST">
+        <p>
+        <label for="deck-add" style="font-family:courier" >Deck Name:</label>
+        <input id="deck-add" name="deck" type="text">
+        </p>
+        <p>
+        <h1>
+            <label for="deck-owner-add" style="font-family:courier" >Owner:</label>
+            <input id="deck-owner-add" name="owner" type="text">
+        </h1>
+        </p>
+        <p>
+        <h2>
+            <input type="submit" value="Add deck">
+        </h2>
+        </p>
+    </form>
+</div>
+
+</body>
+</html>

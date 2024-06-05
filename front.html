@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flashcards4isa</title>
+        <link rel="stylesheet" href="/static/flashcards4isa.css">
+    </head>
+    <body>
+        <div class="logo-header">
+            <img src="/static/flashcards4isafront.png" alt="Flashcards 4 Isa" width="600" height="360">
+        </div>
+
+    <div>
+    <form class="loginform" action="/login" method="POST">
+        <p>
+            <label for="username" style="font-family:courier">username:</label>
+            <input id="username" name="username" type="text">
+        </p>
+        <p>
+            <input type="submit" class="submit" style="font-family:courier" value="enter">
+        </p>
+    </form>
+    {% if fail %}
+      <p class="error">você esqueceu de inserir seu nome de usuário...</p>
+    {% endif %}
+</div>
+</body>
+</html>

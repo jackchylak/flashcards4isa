@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Study deck</title>
+        <link rel="stylesheet" href="/static/flashcards4isa.css">
+    </head>
+    <body>
+        <div class="logo-header">
+            <img onclick="location.href = '/home/{{ username_home }}/'" src="/static/flashcards4isa.png" alt="Flashcards 4 Isa" width="220" height="100">
+        </div>
+
+        <div class="deck-title" style="font-family:courier">{{ deck }} flashcards:</div>
+        <div class="card-label" style="font-family:courier">Front:</div>
+        <div class="card-label" style="font-family:courier">Back:</div>
+
+        {% for card in user_cards[deck] %}
+            <div class="study-cards" >{{ card["card_front"] }}</div>
+            <div class="study-cards" >{{ card["card_back"] }}</div>
+        {% endfor %}
+
+</body>
+</html>
